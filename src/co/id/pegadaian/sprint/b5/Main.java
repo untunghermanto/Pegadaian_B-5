@@ -9,6 +9,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+
+
     public static void main(String[] args){
 
         /*
@@ -32,6 +34,7 @@ public class Main {
 					System.out.println("Inputan yang anda masukkan salah");
 				}
 				else if (pilihanMenu==1) {
+//					Gadai();
 				}
 				else if(pilihanMenu == 2) {
 			
