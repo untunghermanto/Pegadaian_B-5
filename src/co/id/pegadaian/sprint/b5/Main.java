@@ -11,8 +11,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
 
-        /*
-		Data dataGadai = new Data();
+        Data dataGadai = new Data();
 
     	Scanner inputMenu=new Scanner(System.in);
 		System.out.println("Pegadaian System");
@@ -37,6 +36,8 @@ public class Main {
 			
 				}
 				else if(pilihanMenu==3){
+					Inventory inven = new Inventory();
+					inven.showDataInventory();
 				}
 				else {
 					System.out.println("Aplikasi Ditutup");
@@ -51,7 +52,7 @@ public class Main {
 		
 			}
 		}while (notExitStatus);
-        */
+        
 
         //Data data = new Data("Motor bebek", "Motor", "Kharisma", 0, "Gadai", 0);
         //Write write = new Write();
