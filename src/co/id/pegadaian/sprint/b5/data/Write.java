@@ -22,7 +22,7 @@ public class Write {
         return id;
     }
 
-    private String generateString(Data data){
+    public String generateString(Data data){
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append(generateID() + "~");
         stringBuffer.append(data.getNama() + "~");

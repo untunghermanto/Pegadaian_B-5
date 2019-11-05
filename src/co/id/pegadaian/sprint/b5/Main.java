@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
 
-        /*
 		Data dataGadai = new Data();
 
     	Scanner inputMenu=new Scanner(System.in);
@@ -32,6 +31,7 @@ public class Main {
 					System.out.println("Inputan yang anda masukkan salah");
 				}
 				else if (pilihanMenu==1) {
+
 				}
 				else if(pilihanMenu == 2) {
 			
@@ -51,9 +51,7 @@ public class Main {
 		
 			}
 		}while (notExitStatus);
-        */
 
 
-        new Write().writeNewData(new Data("Motor Bebek", "bebek", "Honda Kharisma", 24000000, "Gadai", 2400000));
     }
 }
