@@ -60,13 +60,15 @@ public class Main {
         //Write write = new Write();
         //write.writeData(write.generateString(data));
 
-        Read read = new Read();
-        ArrayList<Data> dataArrayList = read.readData();
-        System.out.println(dataArrayList.get(2).getUtang());
-        dataArrayList.get(2).setUtang(20000);
-        System.out.println(dataArrayList.get(2).getUtang());
+//        Read read = new Read();
+//        ArrayList<Data> dataArrayList = read.readData();
+//        System.out.println(dataArrayList.get(2).getUtang());
+//        dataArrayList.get(2).setUtang(20000);
+//        System.out.println(dataArrayList.get(2).getUtang());
+//
+//        Write write = new Write();
+//        write.writeUpdateData(dataArrayList);
+        Gadai.Gadai();
 
-        Write write = new Write();
-        write.writeUpdateData(dataArrayList);
     }
 }
