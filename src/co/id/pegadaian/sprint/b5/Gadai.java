@@ -86,6 +86,30 @@ public class Gadai {
 
         loopStatus = true;
         //loop Description end
+        //loop Price
+        while(loopStatus)
+        {
+            try {
+                System.out.print("Price :");
+                price=inputMenu.nextLong();
+
+                if (price%10000 == 0 && price >0) {
+                    loopStatus = false;
+
+                }else
+                {
+                    System.out.println("Inputan yang anda masukkan salah");
+                }
+
+            }catch(Exception e){
+                System.out.println("Inputan yang anda masukkan salah");
+                inputMenu.next();
+                continue;
+
+            }
+        }
+
+        //loop Price end
 
 
     }
