@@ -1,1 +1,3 @@
 0~Motor Bebek~bebek~Honda Kharisma~24000000~Gadai~2400000
+1~Untung~Motor~PCX 150~32000000~Gadai~32000000
+2~Untung~Laptop~laptop dell~16000000~Gadai~16000000

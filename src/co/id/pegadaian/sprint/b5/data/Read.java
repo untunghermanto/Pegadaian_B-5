@@ -17,8 +17,6 @@ public class Read {
 
             String readLine = "";
 
-            System.out.println("Reading file using Buffered Reader");
-
             while ((readLine = b.readLine()) != null) {
                 String[] dataList = readLine.split("~");
 

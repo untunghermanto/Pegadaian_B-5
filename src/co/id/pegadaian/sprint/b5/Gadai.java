@@ -7,9 +7,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Gadai {
-    public static void Gadai(){
+    public void gadai(){
 
-        Scanner inputMenu=new Scanner(System.in);
+        Scanner inputMenu = new Scanner(System.in);
         boolean loopStatus = true;
         String nama = "";
         String product = "";
@@ -17,16 +17,14 @@ public class Gadai {
         long price = 0;
 
         //loop Nama
-        while(loopStatus)
-        {
+        while(loopStatus) {
             try {
                 System.out.print("Nama :");
                 nama=inputMenu.nextLine();
 
                 if (nama.length()<3 ||nama.length()>15) {
                     System.out.println("Inputan yang anda masukkan salah");
-                }else
-                {
+                } else {
                     loopStatus = false;
                 }
 
@@ -34,15 +32,13 @@ public class Gadai {
                 System.out.println("Inputan yang anda masukkan salah");
                 inputMenu.next();
                 continue;
-
             }
         }
 
         loopStatus = true;
         //loop Nama end
         //loop Product Category
-        while(loopStatus)
-        {
+        while(loopStatus) {
             try {
                 System.out.print("Product Category :");
                 product=inputMenu.nextLine();
@@ -50,16 +46,14 @@ public class Gadai {
                 if (product.equalsIgnoreCase("Laptop")||product.equalsIgnoreCase("Motor")||product.equalsIgnoreCase("Emas")) {
                     loopStatus = false;
 
-                }else
-                {
+                } else {
                     System.out.println("Inputan yang anda masukkan salah");
                 }
 
-            }catch(Exception e){
+            } catch(Exception e){
                 System.out.println("Inputan yang anda masukkan salah");
                 inputMenu.next();
                 continue;
-
             }
         }
 
@@ -76,24 +70,21 @@ public class Gadai {
                 if (description.contains(" ")) {
                     loopStatus = false;
 
-                }else
-                {
+                } else {
                     System.out.println("Inputan yang anda masukkan salah");
                 }
 
-            }catch(Exception e){
+            } catch(Exception e){
                 System.out.println("Inputan yang anda masukkan salah");
                 inputMenu.next();
                 continue;
-
             }
         }
 
         loopStatus = true;
         //loop Description end
         //loop Price
-        while(loopStatus)
-        {
+        while(loopStatus) {
             try {
                 System.out.print("Price :");
                 price=inputMenu.nextLong();
@@ -101,29 +92,25 @@ public class Gadai {
                 if (price%10000 == 0 && price >0) {
                     loopStatus = false;
 
-                }else
-                {
+                } else {
                     System.out.println("Inputan yang anda masukkan salah");
                 }
 
-            }catch(Exception e){
+            } catch(Exception e){
                 System.out.println("Inputan yang anda masukkan salah");
                 inputMenu.next();
                 continue;
-
             }
         }
 
         //loop Price end
         System.out.println("Detail Information :");
         System.out.println("==================================");
-        System.out.println("Name : "+nama);
-        System.out.println("Product Category : "+ product);
-        System.out.println("Description : "+ description);
-        System.out.println("Price : "+ price);
-        Data data = new Data(nama, product, description, price, "Gadai", price);
-        new Write().writeNewData(data);
-
-
+        System.out.println("Name : " + nama);
+        System.out.println("Product Category : " + product);
+        System.out.println("Description : " + description);
+        System.out.println("Price : " + price);
+        //Data data = new Data(nama, product, description, price, "Gadai", price);
+        new Write().writeNewData(new Data(nama, product, description, price, "Gadai", price));
     }
 }
