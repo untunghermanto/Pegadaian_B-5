@@ -34,7 +34,31 @@ public class Gadai {
 
         loopStatus = true;
         //loop Nama end
-        
+        //loop Product Category
+        while(loopStatus)
+        {
+            try {
+                System.out.print("Product Category :");
+                product=inputMenu.nextLine();
+
+                if (product.equalsIgnoreCase("Laptop")||product.equalsIgnoreCase("Motor")||product.equalsIgnoreCase("Emas")) {
+                    loopStatus = false;
+
+                }else
+                {
+                    System.out.println("Inputan yang anda masukkan salah");
+                }
+
+            }catch(Exception e){
+                System.out.println("Inputan yang anda masukkan salah");
+                inputMenu.next();
+                continue;
+
+            }
+        }
+
+        loopStatus = true;
+        //loop Product Category end
 
 
     }
