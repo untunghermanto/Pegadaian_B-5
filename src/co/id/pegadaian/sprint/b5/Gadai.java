@@ -1,5 +1,6 @@
 package co.id.pegadaian.sprint.b5;
 import java.util.Scanner;
+
 public class Gadai {
     public static void Gadai(){
 

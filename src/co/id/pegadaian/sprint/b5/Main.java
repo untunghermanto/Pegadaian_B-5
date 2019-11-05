@@ -1,19 +1,12 @@
 package co.id.pegadaian.sprint.b5;
 
 import co.id.pegadaian.sprint.b5.data.Data;
-import co.id.pegadaian.sprint.b5.data.Read;
-import co.id.pegadaian.sprint.b5.data.Write;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-
-
     public static void main(String[] args){
 
-        /*
 		Data dataGadai = new Data();
 
     	Scanner inputMenu=new Scanner(System.in);
@@ -34,7 +27,6 @@ public class Main {
 					System.out.println("Inputan yang anda masukkan salah");
 				}
 				else if (pilihanMenu==1) {
-//					Gadai();
 				}
 				else if(pilihanMenu == 2) {
 			
@@ -54,21 +46,6 @@ public class Main {
 		
 			}
 		}while (notExitStatus);
-        */
-
-        //Data data = new Data("Motor bebek", "Motor", "Kharisma", 0, "Gadai", 0);
-        //Write write = new Write();
-        //write.writeData(write.generateString(data));
-
-//        Read read = new Read();
-//        ArrayList<Data> dataArrayList = read.readData();
-//        System.out.println(dataArrayList.get(2).getUtang());
-//        dataArrayList.get(2).setUtang(20000);
-//        System.out.println(dataArrayList.get(2).getUtang());
-//
-//        Write write = new Write();
-//        write.writeUpdateData(dataArrayList);
-        Gadai.Gadai();
 
     }
 }
