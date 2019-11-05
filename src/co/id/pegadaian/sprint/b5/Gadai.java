@@ -110,6 +110,12 @@ public class Gadai {
         }
 
         //loop Price end
+        System.out.println("Detail Information :");
+        System.out.println("==================================");
+        System.out.println("Name : "+nama);
+        System.out.println("Product Category : "+ product);
+        System.out.println("Description : "+ description);
+        System.out.println("Price : "+ price);
 
 
     }
