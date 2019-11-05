@@ -54,5 +54,6 @@ public class Main {
         */
 
 
+        new Write().writeNewData(new Data("Motor Bebek", "bebek", "Honda Kharisma", 24000000, "Gadai", 2400000));
     }
 }
