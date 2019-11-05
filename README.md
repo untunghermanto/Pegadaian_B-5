@@ -24,6 +24,6 @@ Mochamad Nurfaizal mengerjakan menu Gadai
 ```
 
 ```bash
-Mochamad Untung Hermanto mengerjakan Environment, Scrum Master dan Code Reviwer.
+Mochamad Untung Hermanto mengerjakan Environment dan Code Reviwer.
 ```
 
