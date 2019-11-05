@@ -61,21 +61,22 @@ public class Tebus {
 				System.out.print("Masukkan uang yang ingin anda bayarkan:");
 				utang=inputMenu.nextLong();
 				int flag=0;
-				for (Data data : dataArrayList) {
-					if (data.getId() == id) {
+				for(int i =0;i<dataArrayList.size();i++)
+				{
+					if (dataArrayList.get(i).getId() == id) {
 						long sisa = 0;
-						sisa = data.getUtang()-utang; 
+						sisa = dataArrayList.get(i).getUtang()-utang; 
 						if(sisa>0)
 						{
-							data.setUtang(sisa);
+							dataArrayList.get(i).setUtang(sisa);
 							System.out.println("Pembayaran telah diterima. Sisa hutang anda adalah "+sisa);
 							loopStatus = false;
 							flag = 1;
 							break;
 						}else if(sisa == 0)
 						{
-							data.setUtang(sisa);
-							data.setStatus("Lunas");
+							dataArrayList.get(i).setUtang(sisa);
+							dataArrayList.get(i).setStatus("Lunas");
 							System.out.println("Pinjaman anda telah lunas.");
 
 							loopStatus = false;
@@ -83,7 +84,7 @@ public class Tebus {
 							break;
 						}else if(sisa<0)
 						{
-							System.out.println("Pembayaran anda melebihi sisa pinjaman anda. Sisa pinjaman anda adalah "+data.getUtang());
+							System.out.println("Pembayaran anda melebihi sisa pinjaman anda. Sisa pinjaman anda adalah "+dataArrayList.get(i).getUtang());
 							flag = 1;
 						}
 
@@ -101,9 +102,6 @@ public class Tebus {
 				continue;
 			}
 		}
-
-
-
-
+		new Write().writeUpdateData(dataArrayList);
 	}
 }
