@@ -59,6 +59,32 @@ public class Gadai {
 
         loopStatus = true;
         //loop Product Category end
+        //loop Description
+        while(loopStatus)
+        {
+            try {
+                System.out.print("Description :");
+                description=inputMenu.nextLine();
+                description = description.trim();
+
+                if (description.contains(" ")) {
+                    loopStatus = false;
+
+                }else
+                {
+                    System.out.println("Inputan yang anda masukkan salah");
+                }
+
+            }catch(Exception e){
+                System.out.println("Inputan yang anda masukkan salah");
+                inputMenu.next();
+                continue;
+
+            }
+        }
+
+        loopStatus = true;
+        //loop Description end
 
 
     }
