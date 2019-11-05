@@ -20,10 +20,10 @@ Natasha Sarah Adelia mengerjakan menu Inventory
 ```
 
 ```bash
-Mochamad Nurfaizal mengerjakan menu Gadai
+Moch Nurfaizal mengerjakan menu Gadai
 ```
 
 ```bash
-Mochamad Untung Hermanto mengerjakan Environment dan Code Reviwer.
+Mochamad Untung Yuli Hermanto mengerjakan Environment dan Code Reviwer.
 ```
 
