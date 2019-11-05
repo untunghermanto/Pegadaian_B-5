@@ -53,17 +53,6 @@ public class Main {
 		}while (notExitStatus);
         */
 
-        //Data data = new Data("Motor bebek", "Motor", "Kharisma", 0, "Gadai", 0);
-        //Write write = new Write();
-        //write.writeData(write.generateString(data));
 
-        Read read = new Read();
-        ArrayList<Data> dataArrayList = read.readData();
-        System.out.println(dataArrayList.get(2).getUtang());
-        dataArrayList.get(2).setUtang(20000);
-        System.out.println(dataArrayList.get(2).getUtang());
-
-        Write write = new Write();
-        write.writeUpdateData(dataArrayList);
     }
 }
