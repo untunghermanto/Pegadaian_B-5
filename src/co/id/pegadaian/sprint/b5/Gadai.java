@@ -1,4 +1,9 @@
 package co.id.pegadaian.sprint.b5;
+import co.id.pegadaian.sprint.b5.data.Data;
+import co.id.pegadaian.sprint.b5.data.Read;
+import co.id.pegadaian.sprint.b5.data.Write;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Gadai {
@@ -116,6 +121,8 @@ public class Gadai {
         System.out.println("Product Category : "+ product);
         System.out.println("Description : "+ description);
         System.out.println("Price : "+ price);
+        Data data = new Data(nama, product, description, price, "Gadai", price);
+        new Write().writeNewData(data);
 
 
     }
