@@ -34,7 +34,7 @@ public class Main {
 				} else if (pilihanMenu == 1) {
 					new Gadai().gadai();
 				} else if(pilihanMenu == 2) {
-			
+					Tebus.tebus();
 				} else if(pilihanMenu == 3){
 					new Inventory().showDataInventory();
 				} else {
