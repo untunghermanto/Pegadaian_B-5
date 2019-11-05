@@ -6,14 +6,25 @@ public class Data {
     private String nama;
     private String productCategory;
     private String description;
-    private Double price;
+    private long price;
     private String status;
-    private Double utang;
+    private long utang;
 
     public Data() {
     }
 
-    public Data(int id, String nama, String productCategory, String description, Double price, String status, Double utang) {
+    //untuk input
+    public Data(String nama, String productCategory, String description, long price, String status, long utang) {
+        this.nama = nama;
+        this.productCategory = productCategory;
+        this.description = description;
+        this.price = price;
+        this.status = status;
+        this.utang = utang;
+    }
+
+    //get data
+    public Data(int id, String nama, String productCategory, String description, long price, String status, long utang) {
         this.id = id;
         this.nama = nama;
         this.productCategory = productCategory;
@@ -39,7 +50,7 @@ public class Data {
         return description;
     }
 
-    public Double getPrice() {
+    public long getPrice() {
         return price;
     }
 
@@ -47,7 +58,15 @@ public class Data {
         return status;
     }
 
-    public Double getUtang() {
+    public long getUtang() {
         return utang;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public void setUtang(long utang) {
+        this.utang = utang;
     }
 }
