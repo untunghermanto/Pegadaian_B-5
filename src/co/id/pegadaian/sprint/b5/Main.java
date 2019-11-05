@@ -1,9 +1,14 @@
 package co.id.pegadaian.sprint.b5;
 
+import co.id.pegadaian.sprint.b5.data.Data;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+
+		Data dataGadai = new Data();
+
     	Scanner inputMenu=new Scanner(System.in);
 		System.out.println("Pegadaian System");
 		for (int i = 0; i < 16; i++) {
