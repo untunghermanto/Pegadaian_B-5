@@ -10,15 +10,19 @@ public class Inventory {
 		Read read = new Read();
 		
 	    ArrayList<Data> dataArrayList = read.readData();
-		
-		System.out.println("---------------------------------------------------------------------------------");
-		System.out.println("|ID|                NAMA|          PRODUCT|           DESCRIPTION|         PRICE|");
-		System.out.println("---------------------------------------------------------------------------------");
-	
-		for (int i=0; i< dataArrayList.size(); i++) {
-			System.out.println("| " +dataArrayList.get(i).getId() + "|    " +dataArrayList.get(i).getNama() + "|       " +dataArrayList.get(i).getProductCategory() + "|         "+dataArrayList.get(i).getDescription()  +"|      "+dataArrayList.get(i).getPrice());	
-			
-			}
+
+		String formatter = "| %-4s | %-15s | %-10s | %-25s | %-15s |";
+
+		System.out.println("+------+-----------------+------------+---------------------------+-----------------+");
+		System.out.println(String.format(formatter, "ID", "Product", "Category", "Description", "Price"));
+		System.out.println("+------+-----------------+------------+---------------------------+-----------------+");
+
+		for (Data data : dataArrayList) {
+			if (data.getStatus().equalsIgnoreCase("gadai"))
+				System.out.println(String.format(formatter, data.getId(), data.getNama(), data.getProductCategory(), data.getDescription(), data.getPrice()));
+		}
+
+		System.out.println("+------+-----------------+------------+---------------------------+-----------------+");
 	}
 
 
