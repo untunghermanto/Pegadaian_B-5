@@ -4,26 +4,26 @@ Repositori untuk tugas GIT dari kelompok 5 yang beranggotakan:
 
 
 ```bash
-Samatra Marwa Hany mengerjakan menu Tebus
+Samatra Marwa Hany (lowlovlox) mengerjakan menu Tebus
 ```
 
 ```bash
-Arif Ramadhan mengerjakan menu Tebus
+Arif Ramadhan (arifardhan) mengerjakan menu Tebus
 ```
 
 ```bash
-Nurfauziah mengerjakan menu Gadai
+Nurfauziah (nrfzh6690) mengerjakan menu Gadai
 ```
 
 ```bash
-Natasha Sarah Adelia mengerjakan menu Inventory 
+Natasha Sarah Adelia (natashaasrh) mengerjakan menu Inventory 
 ```
 
 ```bash
-Moch Nurfaizal mengerjakan menu Gadai
+Moch Nurfaizal (mochamadnurfaizal) mengerjakan menu Gadai
 ```
 
 ```bash
-Mochamad Untung Yuli Hermanto mengerjakan Environment dan Code Reviwer.
+Mochamad Untung Yuli Hermanto (untunghermanto) mengerjakan Environment dan Code Reviwer.
 ```
 
